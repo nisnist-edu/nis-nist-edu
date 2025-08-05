@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NIST Information System</title>
+</head>
+
+<body>
+    <nav>
+        <div class="upnav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Noticeboard</a></li>
+            <li><a href="#">NEWS Letters</a></li>
+            <li><a href="#">Bus Schedule</a></li>
+            <li><a href="#">Journals</a></li>
+        </div>
+        <div class="downnav">
+            <div class="logo">
+                <img src="logo.jpg" alt="loading..." height="20px">
+            </div>
+            <div class="auth">
+                <form>
+                    <div class="form-group">
+                        <label for="username">User Name:</label>
+                        <input type="text" id="username" placeholder="Username" required>
+                    </div>
+                    
+                    <div class="form-group password-container">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" placeholder="Password" required>
+                        <span class="eye-icon" onclick="togglePassword()">👁️</span>
+                    </div>
+            
+                    <button type="submit"><a href="afterlogin.html">Login</a></button>
+                </form>
+            </div>          
+        </div>
+    </nav>
+   <div class = "contain">
+    <img src="notice.jpg" alt="loading..." width="100%" height="560px">
+   </div>
+
+   <div class="footer">
+    <p>The site is maintained by NIST IT Team</p>
+   </div>
+   
+   <script>
+        function togglePassword() {
+            const passwordInput = document.getElementById("password");
+            if (passwordInput.type === "password")
+                passwordInput.type = "text";
+            else 
+                passwordInput.type = "password";
+        }
+    </script>
+</body>
+   
+   <script>
+        function togglePassword() {
+            const passwordInput = document.getElementById("password");
+            if (passwordInput.type === "password")
+                passwordInput.type = "text";
+            else 
+                passwordInput.type = "password";
+        }
+    </script>
+</body>
+</html>
